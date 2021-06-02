@@ -37,6 +37,7 @@ DEVICE_RESOURCE = 'dataservice/device'
 # URL for device API resource
 DEVICE_URL = BASE_URL_STR + DEVICE_RESOURCE
 DEVICE_RESPONSE = SESS.get(DEVICE_URL, verify=False)
+
 DEVICE_ITEMS = json.loads(DEVICE_RESPONSE.content)['data']
 
 print('{0:20s}{1:1}{2:12s}{3:1}{4:36s}{5:1}{6:16s}{7:1}{8:7s}'.format("Host-Name", "|", "Device Model", "|", "Device ID", "|", "System IP", "|", "Site ID"))

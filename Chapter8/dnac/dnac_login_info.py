@@ -6,7 +6,7 @@
 # 教主技术进化论拓展你的技术新边疆
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
-username = "devnetuser",
-password = "Cisco123!",
+username = "devnetuser"
+password = "Cisco123!"
 base_url = "https://sandboxdnac2.cisco.com"
 
