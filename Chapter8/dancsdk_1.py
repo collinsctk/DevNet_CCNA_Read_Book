@@ -9,13 +9,13 @@
 from dnacentersdk import api
 import datetime
 import time
-
+from dnac_login_info import username, password, base_url
 
 # Create a DNACenterAPI connection object;
 # it uses DNA Center sandbox URL, username and password
-DNAC = api.DNACenterAPI(username="devnetuser",
-                        password="Cisco123!",
-                        base_url="https://sandboxdnac2.cisco.com")
+DNAC = api.DNACenterAPI(username=username,
+                        password=password,
+                        base_url=base_url)
 
 # Find all devices
 DEVICES = DNAC.devices.get_device_list()
