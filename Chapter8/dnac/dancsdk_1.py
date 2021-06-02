@@ -9,7 +9,7 @@
 from dnacentersdk import api
 import datetime
 import time
-from dnac_login_info import username, password, base_url
+from dnac.dnac_login_info import username, password, base_url
 
 # Create a DNACenterAPI connection object;
 # it uses DNA Center sandbox URL, username and password

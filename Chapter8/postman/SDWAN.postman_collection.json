@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "74ef2c14-7b22-4139-b24d-009962888920",
+		"name": "SDWAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get_Cookie",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "j_username",
+							"value": "devnetuser",
+							"type": "text"
+						},
+						{
+							"key": "j_password",
+							"value": "RG!_Yw919_83",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://sandbox-sdwan-1.cisco.com/j_security_check",
+					"protocol": "https",
+					"host": [
+						"sandbox-sdwan-1",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"j_security_check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Template",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sandbox-sdwan-1.cisco.com/dataservice/template/device",
+					"protocol": "https",
+					"host": [
+						"sandbox-sdwan-1",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"dataservice",
+						"template",
+						"device"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Device",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sandbox-sdwan-1.cisco.com/dataservice/device",
+					"protocol": "https",
+					"host": [
+						"sandbox-sdwan-1",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"dataservice",
+						"device"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -7,7 +7,7 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 import json
-from sdwan_login_info import username, password, vmanager_ip
+from sdwan.sdwan_login_info import username, password, vmanager_ip
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)

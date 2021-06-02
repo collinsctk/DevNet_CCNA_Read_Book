@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "7adc0993-cc5b-4b9a-83d0-eb29276b956d",
+		"name": "DNAC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DNAC Token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "devnetuser",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Cisco123!",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://sandboxdnac2.cisco.com/dna/system/api/v1/auth/token",
+					"protocol": "https",
+					"host": [
+						"sandboxdnac2",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"dna",
+						"system",
+						"api",
+						"v1",
+						"auth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET DNAC Client",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2MDRlNTc0ZDdiM2FhOTA2ZWRmMjA3M2QiLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjVlNWE0MzI2NzUxNjEyMDBjYzRhYzk2MyJdLCJ0ZW5hbnRJZCI6IjVlNWE0MzI1NzUxNjEyMDBjYzRhYzk1YyIsImV4cCI6MTYyMjUyMjM3MCwiaWF0IjoxNjIyNTE4NzcwLCJqdGkiOiJhMmExNWQxNC04ODJjLTQ1YmUtOWI0OS1mZWU1MWVmYTQwM2YiLCJ1c2VybmFtZSI6ImRldm5ldHVzZXIifQ.oxky5mK9xEscYfsR9KuWGf_l__Xkr_Rbm382Q_WkrmI8JhW-rs7DDTnhqoX0Hqbc5xSDF7v4GVeBkn531bUrgzQfx8_PIWwW8a62VhidIIK-3rng_PA0axqioz2qGtJekRM5wkWdTORCGUwq3QsTpj538qEbhERH7_hku4kMW5TTnP3xH0QoO2siB9Ucbs9GAq7XKDLpHBt34SWSD1KhY9Uh7CYaUuHZL-73OXTO7xISgwlSR_3H_uLKHf4FFViGrr9-ABPNhDHmy4_jI9w-QaHgnhp_TwS-FxKLXjiPoRQ17dec560z0WaOAegQhBR_VP8S3_lim2C6jJZnQrUEgg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://sandboxdnac2.cisco.com/dna/intent/api/v1/client-health?timestamp=1566506489000",
+					"protocol": "https",
+					"host": [
+						"sandboxdnac2",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"dna",
+						"intent",
+						"api",
+						"v1",
+						"client-health"
+					],
+					"query": [
+						{
+							"key": "timestamp",
+							"value": "1566506489000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET DNAC Devices Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2MDRlNTc0ZDdiM2FhOTA2ZWRmMjA3M2QiLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjVlNWE0MzI2NzUxNjEyMDBjYzRhYzk2MyJdLCJ0ZW5hbnRJZCI6IjVlNWE0MzI1NzUxNjEyMDBjYzRhYzk1YyIsImV4cCI6MTYyMjUyMjM3MCwiaWF0IjoxNjIyNTE4NzcwLCJqdGkiOiJhMmExNWQxNC04ODJjLTQ1YmUtOWI0OS1mZWU1MWVmYTQwM2YiLCJ1c2VybmFtZSI6ImRldm5ldHVzZXIifQ.oxky5mK9xEscYfsR9KuWGf_l__Xkr_Rbm382Q_WkrmI8JhW-rs7DDTnhqoX0Hqbc5xSDF7v4GVeBkn531bUrgzQfx8_PIWwW8a62VhidIIK-3rng_PA0axqioz2qGtJekRM5wkWdTORCGUwq3QsTpj538qEbhERH7_hku4kMW5TTnP3xH0QoO2siB9Ucbs9GAq7XKDLpHBt34SWSD1KhY9Uh7CYaUuHZL-73OXTO7xISgwlSR_3H_uLKHf4FFViGrr9-ABPNhDHmy4_jI9w-QaHgnhp_TwS-FxKLXjiPoRQ17dec560z0WaOAegQhBR_VP8S3_lim2C6jJZnQrUEgg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://sandboxdnac2.cisco.com/dna/intent/api/v1/network-device",
+					"protocol": "https",
+					"host": [
+						"sandboxdnac2",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"dna",
+						"intent",
+						"api",
+						"v1",
+						"network-device"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
