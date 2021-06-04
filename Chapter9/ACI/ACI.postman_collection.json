@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "27089962-fed9-439b-a47b-486b7395007a",
+		"name": "ACI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aaaUser\" : {\r\n        \"attributes\" : {\r\n            \"name\" : \"admin\",\r\n            \"pwd\" : \"ciscopsdt\"\r\n            }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://sandboxapicdc.cisco.com/api/aaaLogin.json",
+					"protocol": "https",
+					"host": [
+						"sandboxapicdc",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"api",
+						"aaaLogin.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all ACI Fabric",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sandboxapicdc.cisco.com/api/node/class/fabricPod.json",
+					"protocol": "https",
+					"host": [
+						"sandboxapicdc",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"api",
+						"node",
+						"class",
+						"fabricPod.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all Devices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
